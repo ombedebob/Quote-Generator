@@ -1,0 +1,58 @@
+let btn = document.getElementById("btn");
+let output = document.getElementById("output");
+let quote = [
+    "Success is not the key to happiness. Happiness is the key to success.",
+    "Your limitation—it's only your imagination.",
+    "The harder you work for something, the greater you'll feel when you achieve it.",
+    "Dream it. Wish it. Do it.",
+    "Don't stop when you're tired. Stop when you're done.",
+    "Failure is not the opposite of success; it’s part of success.",
+    "It always seems impossible until it's done.",
+    "Wake up with determination. Go to bed with satisfaction.",
+    "Don’t wait for opportunity. Create it.",
+    "Great things never come from comfort zones.",
+    "If you can dream it, you can do it.",
+    "Success doesn’t just find you. You have to go out and get it.",
+    "Believe you can and you're halfway there.",
+    "Hard work beats talent when talent doesn’t work hard.",
+    "Do something today that your future self will thank you for.",
+    "The key to success is to focus on goals, not obstacles.",
+    "It’s not whether you get knocked down, it’s whether you get up.",
+    "Don’t limit your challenges. Challenge your limits.",
+    "To see what is right and not do it is a lack of courage.",
+    "Discipline is the bridge between goals and accomplishment.",
+    "Success is not how high you have climbed, but how you make a positive difference to the world.",
+    "The only way to do great work is to love what you do.",
+    "Success usually comes to those who are too busy to be looking for it.",
+    "Stay positive. Work hard. Make it happen.",
+    "Opportunities don't happen. You create them.",
+    "Don’t wish it were easier. Wish you were better.",
+    "Don’t be afraid to give up the good to go for the great.",
+    "Success is walking from failure to failure with no loss of enthusiasm.",
+    "The road to success and the road to failure are almost exactly the same.",
+    "Start where you are. Use what you have. Do what you can.",
+    "The only limit to our realization of tomorrow is our doubts of today.",
+    "It’s not about ideas. It’s about making ideas happen.",
+    "Don’t be pushed by your problems. Be led by your dreams.",
+    "The secret of getting ahead is getting started.",
+    "The only place where success comes before work is in the dictionary.",
+    "Small progress is still progress.",
+    "You don’t have to be great to start, but you have to start to be great.",
+    "Act as if what you do makes a difference. It does.",
+    "Success is the sum of small efforts, repeated day in and day out.",
+    "Don’t let yesterday take up too much of today.",
+    "The future belongs to those who believe in the beauty of their dreams.",
+    "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+    "The best way to predict the future is to create it.",
+    "Don’t watch the clock; do what it does. Keep going.",
+    "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "Set your goals high, and don't stop till you get there.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "If you want to achieve greatness stop asking for permission.",
+    "Don’t be afraid to give up the good to go for the great."
+];
+
+btn.addEventListener("click",() => {
+  var randomQuote = quote[Math.floor(Math.random() * quote.length)]
+  output.innerHTML = randomQuote;
+})
